@@ -5,11 +5,9 @@ let longitude = document.getElementById('lon');
 const button = document.getElementById('btn');
 const resetButton = document.getElementById('reset');
 // checkboxes
-let celsuisCheckbox = document.getElementById('celsius_checkbox')
-let fahrenheitCheckbox = document.getElementById('fahrenheit_checkbox')
-let kelvinCheckbox = document.getElementById('kelvin_checkbox')
-// checkboxes
 let checkboxes = document.querySelectorAll('#checkbox');
+// output divs
+let coordinateDiv = document.getElementById('coordinates')
 
 
 // Get values from inputs
@@ -86,6 +84,7 @@ function checkboxCheck(checkboxes) {
 			checkboxes[1].classList.remove("active");
 			checkboxes[2].classList.remove("active");
 		}
+		coordinateDiv.style.display = 'block';
 	})
 	checkboxes[1].addEventListener("click", function() {
 		if(checkboxes[1].checked){
@@ -95,6 +94,7 @@ function checkboxCheck(checkboxes) {
 			checkboxes[0].classList.remove("active");
 			checkboxes[2].classList.remove("active");
 		}
+		coordinateDiv.style.display = 'block';
 	})
 	checkboxes[2].addEventListener("click", function() {
 		if(checkboxes[2].checked){
@@ -104,6 +104,7 @@ function checkboxCheck(checkboxes) {
 			checkboxes[0].classList.remove("active");
 			checkboxes[1].classList.remove("active");
 		}
+		coordinateDiv.style.display = 'block';
 	})
 }
 checkboxCheck(checkboxes)
