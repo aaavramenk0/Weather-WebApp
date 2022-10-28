@@ -65,7 +65,7 @@ function output(weather) {
 
 	document.getElementById('output').append(cityName, br, country, br2, temperature, br3, weatherGroup, br4, br5);
 	
-	resetButton.style.display = 'inline'
+	resetButton.style.display = 'block'
 }
 
 resetButton.addEventListener('click', reset)
