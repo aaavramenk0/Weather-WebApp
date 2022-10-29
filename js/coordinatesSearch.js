@@ -31,7 +31,7 @@ let cityNamesDiv = document.getElementById('city_names');
 	button_cityName.addEventListener('click', async function() {
 		let cityName = city_name.value;
 
-		const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=7cf66b5215db60e56aa4e23f5e4ed5fb`);
+		const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=7cf66b5215db60e56aa4e23f5e4ed5fb`);
     	weather = await response.json();
 				
     	lat = weather[0].lat;
