@@ -155,6 +155,3 @@ let cityNamesDiv = document.getElementById('city_names');
 	}
 	// call function for checking checkboxes states
 	checkboxCheck(checkboxes, searching_checkboxes)
-
-
-

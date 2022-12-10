@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>Open Weather API</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--API ACCESS KEYS:  
+    openweathermap.org => 7cf66b5215db60e56aa4e23f5e4ed5fb
+    www.getambee.com => 03a55d9bcb95282a3c334451f6889ade50eab3f0db3bea733ec5cebed458ec05
+-->
     <h1 class="heading">Weather around the world</h1>
+    <div class="apis-div">
+        <a href="ambee.html" class="apis-link ambee">Ambee API</a>
+        <a href="openWeatherApi.html" class="apis-link">Open Weather API</a>
+    </div>
+    
     <div class="labels">
         <label for="" class="inputs_heading">Temperature system</label><br>
         <input type="checkbox" name="celsius" id="checkbox"><label for="celsius">Celsius</label>
@@ -37,7 +46,7 @@
     </div>
     
     <a href="#" id="reset">Clear</a>
-    
+
     <script src="js/coordinatesSearch.js"></script>
     <script src="js/cityNamesSearch.js"></script>
 </body>
